@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MyFirstJavaScript</title>
+        <link rel="stylesheet" href="Style.css">
+        <script rel="MyFirstJavaScript" src="First.js"></script>
+    </head>
+</html>
+<body>
+    <div class="edit clear">
+        <input type="text" id="product_name" name="product name" placeholder="Product name">
+                    <select class="select" name="Quality" id="product_quality">
+                        <option value="select">Quality</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="date" id="production_date" name="production date" placeholder="dd/mm/yy">
+                    <input type="text" id="product_quantity" name="quantity" placeholder="Quantity">
+                    <input type="text" id="product_price" name="price" placeholder="Unit Price">
+                    <input type="button" onclick="save()" value="Update">
+    </div>
+</body>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MyFirstJavaScript</title>
+        <link rel="stylesheet" href="Style.css">
+        <script rel="MyFirstJavaScript" src="First.js"></script>
+    </head>
+</html>
+<body>
+    <div class="overview clear">
+        <div class="search clear">
+            <form action="">
+                <input type="search" name="search" placeholder="Search">
+            </form>
+        </div>
+        <div class="add clear">
+            <div class="addhead claer">
+                <p>Add Product</p>
+            </div>
+            <div class="addsection claer">
+                    <input type="text" id="product_name" name="product name" placeholder="Product name">
+                    <select class="select" name="Quality" id="product_quality">
+                        <option value="select">Quality</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <input type="date" id="production_date" name="production date" placeholder="dd/mm/yy">
+                    <input type="text" id="product_quantity" name="quantity" placeholder="Quantity">
+                    <input type="text" id="product_price" name="price" placeholder="Unit Price">
+                    <input type="button" onclick="save()" value="Add New Product">
+                    <div id="warning"></div>
+            </div>
+        </div>
+        <div class="list clear">
+            <div class="listhead claer">
+                <p>Product list</p>
+            </div>
+            <div class="listsection">
+                <Ul>
+                    <li><a href="">All</a></li>
+                    <li><a href="">Name</a></li>
+                    <li><a href="">Complete</a></li>
+                    <li><a href="">Sorted by</a>
+                        <ul>
+                            <li><a href="">By Name</a></li>
+                            <li><a href="">By Quality</a></li>
+                            <li><a href="">By Date</a></li>
+                        </ul>
+                    </li>
+                </Ul>
+            </div>
+            <div class="production clear">
+                <div class="data clear">
+                    <div class="head clear">
+                        <div class="head1 clear">
+                            <table>
+                                <tr>
+                                    <td width="20%">
+                                        <p>Product Name:</p>
+                                    <td width="20%">                         
+                                        <p id="name"></p>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="head2 clear">
+                            <table>
+                                <td >
+                                    <p>Product Quality:</p>
+                                </td>
+                                <td >                         
+                                    <p id="quality"></p>
+                                </td>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="info clear">
+                        <table>
+                            <tr>
+                                <td width="20%">
+                                    <p>Production Date:</p>
+                                </td>
+                                <td width="20%">
+                                    <p id="date"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <p>Quantity:</p>
+                                </td>
+                                <td width="20%">
+                                    <p id="quantity"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td width="20%">
+                                        <p>Price:</p>
+                                    </td>
+                                    <td width="20%">
+                                        <P id="price"></P>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="20%">
+                                        <p>Total:</p>
+                                    </td>
+                                    <td width="20%">
+                                        <div id="total"></div>
+                                    </td>
+                                </tr>
+                        </table>
+                    </div>
+                    <div class="foot clear">
+                        <a href="edit.html"><button class="button1" >Edit</button></a>
+                        <button class="button2">Delete</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
